@@ -31,7 +31,6 @@ Some playing with java multithreading
      of the addition task by the first thread before the second thread prints
      the value.
 
-
 ###4. More complex constructions
 
 **4.a.** We have seen several examples of producer-consumer implemented using a
