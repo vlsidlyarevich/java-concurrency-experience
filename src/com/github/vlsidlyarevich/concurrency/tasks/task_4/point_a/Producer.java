@@ -13,6 +13,15 @@ public class Producer extends Thread {
 
     @Override
     public void run() {
-        super.run();
+        for (int i = 1; i < 10; i++) {
+            resource.add(i);
+            System.out.println("Producer #" + this.getId() + " producing:" + i);
+            try {
+                sleep((int) (Math.random() * 100));
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
     }
 }

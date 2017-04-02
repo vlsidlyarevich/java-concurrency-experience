@@ -13,6 +13,8 @@ public class Consumer extends Thread {
 
     @Override
     public void run() {
-        super.run();
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Consumer #" + this.getId() + " consuming:" + resource.get());
+        }
     }
 }
